@@ -7,5 +7,5 @@ interface JsonMappedInterface
     /**
      * @return JsonMap[]
      */
-    public static function getJsonMap();
+    public static function getJsonMaps();
 }

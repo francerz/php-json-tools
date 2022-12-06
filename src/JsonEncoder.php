@@ -53,7 +53,7 @@ abstract class JsonEncoder
         }
 
         /** @var JsonMap[] */
-        $maps = $classType::getJsonMap();
+        $maps = $classType::getJsonMaps();
         $mappings = [];
         foreach ($maps as $m) {
             $mappings[$m->getJsonAttrName()] = $m;

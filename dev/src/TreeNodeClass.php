@@ -10,7 +10,7 @@ class TreeNodeClass implements JsonMappedInterface, JsonSerializable
 {
     private $childNodes = [];
 
-    public static function getJsonMap()
+    public static function getJsonMaps()
     {
         return [
             new JsonMap('children', 'childNodes', TreeNodeClass::class)

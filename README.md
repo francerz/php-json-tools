@@ -13,24 +13,24 @@ composer require francerz/sql-tools
 Usage
 ---------------------------------------
 
-Implementing `JsonMappedAttributesInterface` interface into `Student` class.
+Implementing `JsonMappedInterface` interface into `Student` class.
 
 ```php
-use Francerz\JsonTools\JsonAttributeMap;
-use Francerz\JsonTools\JsonMappedAttributesInterface;
+use Francerz\JsonTools\JsonMap;
+use Francerz\JsonTools\JsonMappedInterface;
 
-class Student implements JsonMappedAttributesInterface
+class Student implements JsonMappedInterface
 {
     private $studentId;
     private $givenName;
     private $familyName;
 
-    public function getJsonMappings()
+    public function getJsonMaps()
     {
         return [
-            new JsonAttributeMap('id', 'studentId'),
-            new JsonAttributeMap('given_name', 'givenName'),
-            new JsonAttributeMap('family_name', 'familyName')
+            new JsonMap('id', 'studentId'),
+            new JsonMap('given_name', 'givenName'),
+            new JsonMap('family_name', 'familyName')
         ];
     }
 }

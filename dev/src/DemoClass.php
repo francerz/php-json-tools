@@ -13,7 +13,7 @@ class DemoClass implements JsonMappedInterface, JsonSerializable
     private $charlie;
 
     #region Static Methods
-    public static function getJsonMap()
+    public static function getJsonMaps()
     {
         return [
             new JsonMap('alpha'),
