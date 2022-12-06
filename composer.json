@@ -1,0 +1,20 @@
+{
+    "name": "francerz/json-tools",
+    "description": "Tools for encoding and decoding json objects.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "ISC",
+    "autoload": {
+        "psr-4": {
+            "Francerz\\JsonTools\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Francerz\\JsonTools\\Dev\\": "dev/src/"
+        }
+    },
+    "require": {}
+}
